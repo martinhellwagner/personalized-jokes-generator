@@ -1,0 +1,105 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* styling adapted from https://github.com/juliancwirko/react-s-alert/blob/master/dist/s-alert-default.css */
+.s-alert-box,
+.s-alert-box * {
+  box-sizing: border-box;
+}
+.s-alert-box {
+  position: fixed;
+  background: rgba(42,45,50,0.85);
+  padding: 22px;
+  line-height: 1.4;
+  z-index: 1000;
+  pointer-events: none;
+  color: rgba(250,251,255,0.95);
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  max-width: 300px;
+  -webkit-transition: top .4s, bottom .4s;
+  transition: top .4s, bottom .4s;
+}
+.s-alert-box.s-alert-show {
+  pointer-events: auto;
+}
+.s-alert-box a {
+  color: inherit;
+  opacity: 0.7;
+  font-weight: 700;
+}
+.s-alert-box a:hover,
+.s-alert-box a:focus {
+  opacity: 1;
+}
+.s-alert-box p {
+  margin: 0;
+}
+.s-alert-box.s-alert-show,
+.s-alert-box.s-alert-visible {
+  pointer-events: auto;
+}
+.s-alert-close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  overflow: hidden;
+  text-indent: 100%;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.s-alert-close:hover,
+.s-alert-close:focus {
+  outline: none;
+}
+.s-alert-close::before,
+.s-alert-close::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+}
+.s-alert-close:hover::before,
+.s-alert-close:hover::after {
+  background: #fff;
+}
+.s-alert-close::before {
+  -webkit-transform: translate(-50%,-50%) rotate(45deg);
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.s-alert-close::after {
+  -webkit-transform: translate(-50%,-50%) rotate(-45deg);
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+.s-alert-bottom-right {
+  top: auto;
+  right: 30px;
+  bottom: 30px;
+  left: auto;
+}
+.s-alert-success {
+  background: #27AE60;
+  color: #fff;
+}
+.s-alert-error {
+  background: #E74C3C;
+  color: #fff;
+}
+[class^="s-alert-effect-"].s-alert-hide,
+[class*=" s-alert-effect-"].s-alert-hide {
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+.s-alert-box-height {
+  visibility: hidden;
+  position: fixed;
+}
