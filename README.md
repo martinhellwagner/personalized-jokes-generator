@@ -4,7 +4,7 @@
 
 This website generates a list of Chuck Norris jokes fetched from [this API](https://api.icndb.com/jokes) and personalises them with the name of user. For the jokes to be personalized correctly, the user needs to log in using *Google OAuth*. Initially, all the jokes are displayed and sorted at random. However, it is possible to search for a specific keyword and display only the jokes matching the search term.
 
-These are the core technologies used for the project:
+The following core technologies are used for the project:
 
 * Node.js / Node Package Manager (NPM)
 * Express
