@@ -14,11 +14,11 @@ The following core technologies are used for the project:
 
 ## How to get stared
 
-To get started, you first need to make sure that you have Node.js and NPM installed. If you haven't, please do so before continuing. With Node.js and NPM set up, you can go ahead and install the necessary packages by calling this command from the root directory:
+To get started, you first need to make sure that you have [Node.js](https://nodejs.org/en) and [NPM](https://www.npmjs.com) installed. If you haven't, please do so before continuing. With Node.js and NPM set up, you can go ahead and install the necessary packages by calling this command from the root directory:
 
     npm install
 
-After all the packages are installed, you are ready to start the application. Through the power of Gulp (the code for which is found in the gulpfile), all the commands needed for this process are called automatically. All you need to do to start the project is call this command from the root directory:
+After all the packages are installed, you are ready to start the application. Through the power of [Gulp](https://gulpjs.com) (the code for which is found in the gulpfile), all the commands needed for this process are called automatically. All you need to do to start the project is call this command from the root directory:
 
     npm run start
 
